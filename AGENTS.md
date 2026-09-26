@@ -12,7 +12,8 @@ this file in the same pass.
 
 ## What this is
 
-A single-page studio site: manifesto intro and connect links. It is not a personal homepage, blog, or dashboard. The personal
+A single-page studio site: manifesto intro, one project card, and connect
+links. It is not a personal homepage, blog, or dashboard. The personal
 site is hpbrn.cc.
 
 Slogan: Tools for lucidity. Do not turn this page into a biography.
@@ -31,6 +32,7 @@ Tailwind v4   motion/react   Geist
 
 ```
 app/              the site
+public/images/    project art
 public/logos/     identity images
 ```
 
@@ -104,6 +106,7 @@ Do not unsolicited-rewrite it.
 ### Surfaces
 
 - Intro: hpbrn mark, name, manifesto with keyword asides
+- Projects: Creed card with view-site and view-repo
 - Connect: theme, X, GitHub, then a Discord online chip and a
   connorhpbrn chip
 
@@ -115,8 +118,8 @@ Discord chip links to `https://join.hpbrn.com`. Presence count still
 comes from invite `B7nEbKmUnF` and revalidates every 60s. connorhpbrn
 chip uses `public/logos/me.png` and links to hpbrn.cc.
 
-Connect chips share `.connect-card` and a 2px `activity-empty`
-ring. The portrait chip has a 2px tighter left pad
+Connect chips share `.connect-card` and the same 2px `activity-empty`
+ring as project cards. The portrait chip has a 2px tighter left pad
 (`.connect-card-avatar`) because the photo sits optically wider than the
 Discord glyph. Do not "fix" that by changing both chips.
 
